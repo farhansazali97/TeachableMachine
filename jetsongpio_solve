@@ -1,0 +1,6 @@
+Jetson gpio
+
+To solve this problem, run the following code in sequence:
+sudo usermod -aG gpio $USER
+sudo chown root.gpio /dev/gpiochip0
+sudo chmod 660 /dev/gpiochip0
